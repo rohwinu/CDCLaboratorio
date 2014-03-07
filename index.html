@@ -24,19 +24,51 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.css"/>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/validacion.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.2.js"></script>
         <title>Hello World</title>
     </head>
     <body>
-        <div id="contenido">
-            <div class="app">
-                <h1>PhoneGap</h1>
-                <div id="deviceready" class="blink">
-                    <p class="event listening">Connecting to Device</p>
-                    <p class="event received">Device is Ready</p>
-                    <input type="text" id="nombre"/>
-                    <button onclick="prueba();return false;">Prueba</button>
+        <div data-role="page" data-theme="b" id="pagina1">
+            <div data-role="header" data-position="fixed">
+                <h1>CDC Laboratorio</h1>
+                <a href="pagina.php">Atras</a>
+                <a href="pagina.php">Adelante</a>
+            </div>
+            <div data-role="content">
+                <!--
+    <form>
+                    <label for="text-basic">Usuario:</label>
+                    <input type="text" name="text-basic" id="text-basic" value="">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" name="password" id="password" value="" autocomplete="off">
+                    <a href="pagina2.php" data-role="button" data-rel="dialog">Ingresar</a>
+                </form> 
+    -->
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend a risus sit amet varius. Integer lacinia consequat ipsum, at viverra urna molestie non. Vivamus facilisis imperdiet quam, eu interdum dui suscipit at. Sed nisl justo, venenatis ac tempus eu, varius a nunc. Donec sollicitudin vulputate pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus fringilla porta purus ac vestibulum. Nulla consequat mollis libero, posuere fermentum nisl pharetra non.
+                
+                In lacinia pulvinar nibh id laoreet. Proin vulputate nunc vitae lacus commodo molestie. Maecenas viverra lectus a libero pellentesque, sit amet laoreet massa lacinia. Nullam nec rhoncus mi, placerat dignissim eros. Praesent eu eros interdum, viverra velit porta, rhoncus lorem. Suspendisse consectetur pellentesque rutrum. Phasellus odio ligula, feugiat at sem quis, viverra laoreet arcu. Curabitur sollicitudin gravida ante. Mauris eget commodo lorem. Nullam eros erat, eleifend non lorem at, tincidunt gravida nunc. Ut sit amet ipsum vitae metus congue porttitor at in neque. Integer sem sem, tincidunt sit amet tellus quis, facilisis volutpat sem. Phasellus bibendum ultrices risus a vehicula. Aliquam erat volutpat. Morbi suscipit, sapien quis consectetur congue, magna eros ornare arcu, ac fermentum massa ante nec nisi.
+                
+                Sed faucibus eleifend imperdiet. Proin sit amet posuere elit, et dignissim sem. Aenean et urna scelerisque, commodo diam eu, varius ipsum. Morbi gravida vel nunc eget pulvinar. Phasellus dignissim, purus et egestas volutpat, velit orci consectetur sem, eu venenatis felis purus ac nunc. Aliquam blandit lectus ut erat ornare, non adipiscing nulla vestibulum. Maecenas aliquam auctor risus a hendrerit. Nam in imperdiet diam. Suspendisse potenti. Quisque quis neque nisl. Maecenas tempus purus sed tellus ultrices, quis sollicitudin ipsum elementum. Donec porta ligula neque, id tempus odio ornare in. Aenean sed luctus ligula. Praesent et erat vel mi mattis cursus id et nisl. Donec rutrum, enim id tincidunt eleifend, tortor arcu tristique lorem, vel fermentum leo eros at magna.
+                
+                Sed vehicula eget enim vel viverra. Nulla tempus tristique quam a auctor. Duis eleifend diam sit amet massa ultrices, at rhoncus ipsum accumsan. Vestibulum vestibulum, mi id accumsan vehicula, augue arcu rutrum enim, quis feugiat lacus sapien at lorem. Integer hendrerit, nisl in vestibulum pellentesque, nunc nisl iaculis quam, ut dignissim libero quam nec ante. Aliquam eu sapien porta, imperdiet mi sed, tempor lacus. Nullam est elit, egestas vitae felis et, porttitor luctus leo. Quisque auctor ipsum sed ultrices pellentesque. Suspendisse aliquam posuere est vitae congue. Quisque nunc lacus, sagittis eget nisi in, mattis sollicitudin ligula. Vivamus varius sem in ante lobortis, ac porttitor dui bibendum.
+                
+                Nullam consequat molestie nibh at condimentum. Mauris eu blandit leo, vel ultricies dui. Phasellus sit amet ante ac leo tempor ultrices. Aenean sit amet elementum risus, a congue risus. Sed pulvinar gravida erat. Pellentesque justo risus, dictum nec mauris a, auctor elementum sem. Nunc vel eleifend turpis. Pellentesque eu neque lobortis, faucibus metus eu, condimentum purus. Cras in commodo ipsum. Nullam tristique imperdiet lobortis. Donec eleifend venenatis nulla sed venenatis.       
+                </p>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <!-- Si se colocan mas de 5 botones cambia drasticamente la distribucion-->
+                        <li><a href="#pagina1" class="ui-btn-active"><img src="img/icono.png"/></a></li>
+                        <li><a href="#pagina2">Segundo</a></li>
+                        <li><a href="#pagina3">Tercero</a></li>
+                        <li><a href="#pagina4">Cuarto</a></li>
+                        <li><a href="#pagina5">Quinto</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
