@@ -28,14 +28,27 @@
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/validacion.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.2.js"></script>
+        <style type="text/css">
+            body {
+                background: url(img/img1.png);
+                background-repeat:repeat-y;
+                background-position:center center;
+                background-attachment:scroll;
+                background-size:100% 100%;
+            }
+            .ui-page {
+                background: transparent;
+            }
+            .ui-content{
+                background: transparent;
+            }
+        </style>
         <title>Hello World</title>
     </head>
     <body>
         <div data-role="page" data-theme="b" id="pagina1">
             <div data-role="header" data-position="fixed">
                 <h1>CDC Laboratorio</h1>
-                <a href="pagina.php">Atras</a>
-                <a href="pagina.php">Adelante</a>
             </div>
             <div data-role="content">
                 <!--
@@ -64,15 +77,60 @@
                     <ul>
                         <!-- Si se colocan mas de 5 botones cambia drasticamente la distribucion-->
                         <li><a href="#pagina1" class="ui-btn-active"><img src="img/icono.png"/></a></li>
-                        <li><a href="#pagina2">Segundo</a></li>
-                        <li><a href="#pagina3">Tercero</a></li>
-                        <li><a href="#pagina4">Cuarto</a></li>
-                        <li><a href="#pagina5">Quinto</a></li>
+                        <li><a href="#pagina2"><img src="img/icono.png"/></a></li>
+                        <li><a href="#pagina3"><img src="img/icono.png"/></a></li>
+                        <li><a href="#pagina4"><img src="img/icono.png"/></a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        
+        <div data-role="page" data-theme="b" id="pagina2">
+            <div data-role="header" data-position="fixed">
+                <h1>CDC Laboratorio</h1>
+            </div>
+            <div data-role="content">
+                <h1>contenido2</h1>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <!-- Si se colocan mas de 5 botones cambia drasticamente la distribucion-->
+                        <li><a href="#pagina1"><img src="img/icono.png"/></a></li>
+                        <li><a href="#pagina2" class="ui-btn-active"><img src="img/icono.png"/></a></li>
+                        <li><a href="#pagina3"><img src="img/icono.png"/></a></li>
+                        <li><a href="#pagina4"><img src="img/icono.png"/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" data-theme="b" id="pagina3">
+            <div data-role="header" data-position="fixed">
+                <h1>CDC Laboratorio</h1>
+            </div>
+            <div data-role="content">
+                <h1>contenido3</h1>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <!-- Si se colocan mas de 5 botones cambia drasticamente la distribucion-->
+                        <li><a href="#pagina1"><img src="img/icono.png"/></a></li>
+                        <li><a href="#pagina2"><img src="img/icono.png"/></a></li>
+                        <li><a href="#pagina3" class="ui-btn-active"><img src="img/icono.png"/></a></li>
+                        <li><a href="#pagina4"><img src="img/icono.png"/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" data-theme="b" id="pagina4">
+            <div data-role="header" data-position="fixed">
+                <h1>CDC Laboratorio</h1>
+                <a href="#pagina1">Inicio</a>
+            </div>
+            <div data-role="content">
+                <iframe src="http://www.gatolocostudios.com/MobileCDC"></iframe>
+            </div>
+        </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
