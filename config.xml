@@ -49,4 +49,7 @@
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="http://127.0.0.1*" />
     <access origin="http://www.gatolocostudios.com*" subdomains="true"/>
+    <access origin="http://gatolocostudios.com*" subdomains="true"/>
+    <access origin="http://www.gatolocostudios.com/MobileCDC" subdomains="true"/>
+    <access origin="http://gatolocostudios.com/MobileCDC" subdomains="true"/> 
 </widget>
